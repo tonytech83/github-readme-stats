@@ -10,10 +10,10 @@ const app = express();
 const router = express.Router();
 
 router.get("/", statsCard);
-// router.get("/pin", repoCard);
+router.get("/pin", repoCard);
 router.get("/top-langs", langCard);
-// router.get("/wakatime", wakatimeCard);
-// router.get("/gist", gistCard);
+router.get("/wakatime", wakatimeCard);
+router.get("/gist", gistCard);
 
 app.use("/api", router);
 
